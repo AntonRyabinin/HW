@@ -1,4 +1,4 @@
-package by.htp.jd01.less02.hw04;
+package by.htp.jd01.less02un01.hw04;
 
 import java.util.Scanner;
 import static java.lang.Math.pow;
@@ -24,7 +24,7 @@ public class Digital2 {
 
 		
 		System.out.print("Enter the value of 'b': ");
-		while (sc.hasNext()) {
+		while (!sc.hasNextDouble()) {
 			System.out.println("The value you have entered is not a real number!");
 			System.out.print("Re-enter the value of 'b': ");
 			sc.next();
