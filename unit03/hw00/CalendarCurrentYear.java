@@ -58,8 +58,7 @@ public class CalendarCurrentYear {
                     System.out.println("DECEMBER");
                     break;
             }
-
-            //System.out.println("___________________________");
+			
 
             System.out.println("Sun Mon Tue Thu Wed Fri Sat");
             int weekday = gc.get(Calendar.DAY_OF_WEEK);
@@ -85,7 +84,7 @@ public class CalendarCurrentYear {
                 weekday = gc.get(Calendar.DAY_OF_WEEK);
 
 
-            } while (gc.get(Calendar.MONTH) == month);  //while(gc.get(Calendar.MONTH) == month);
+            } while (gc.get(Calendar.MONTH) == month); 
 
             if (weekday != Calendar.SUNDAY) {
                 System.out.println();
