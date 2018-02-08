@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Coordinate {
 
-    public static Scanner sc = new Scanner(System.in);
-
     public static void main(String[] args){
 		
         int x = init("Enter coordinate 'x': ");
@@ -18,7 +16,10 @@ public class Coordinate {
 
     public static int init(String msg){
 
+        Scanner sc = new Scanner(System.in);
+
         System.out.print(msg);
+
         while (!sc.hasNextInt()) {
             System.out.println("The value you have entered is not integer!");
             System.out.print(msg);
@@ -31,7 +32,7 @@ public class Coordinate {
 
     public static boolean checkArea(int x, int y){
 
-        return ((x>=-4 && y>=-3 && x<=4) || (x>=-2 && y<=3 && x<=2));
+        return ((x>=-4 && y>=-3 && x<=4 && y<=0) || (x>=-2 && y<=3 && x<=2 && y>=0));
 
     }
 
