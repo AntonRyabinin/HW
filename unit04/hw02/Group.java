@@ -35,7 +35,7 @@ public class Group {
         }
     }
 
-    public void addAbiturient() {
+    private void addAbiturient() {
         abit[abitCounter] = new Abiturient();
         abitCounter++;
     }
