@@ -1,0 +1,15 @@
+package by.htp.jd01.unit04.hw02;
+
+public class Main02 {
+
+    public static void main(String[] args){
+
+        Group02 gr = new Group02();
+
+        gr.setGroupSize();
+        gr.setAbiturientNumber();
+        gr.entrance();
+        gr.sortAbit();
+        gr.showAdmittedAbit();
+    }
+}
